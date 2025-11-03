@@ -3,212 +3,659 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Lucas Moraca</title>
-    <!-- Link to external CSS file -->
+    <title>Lucas Moraca - Projects</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Lucas Moraca</a>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="#education">Education & Experience</a>
-                <a href="#vision">My Vision</a>
-            </div>
-        </div>
-    </nav>
-
     <!-- Projects Section -->
-    <section id="projects" class="projects projects-page">
+    <section id="projects" class="projects">
         <div class="container">
-            <h1 class="page-title">My Projects</h1>
-            <p class="page-subtitle">A showcase of my work, experiences, and ongoing pursuits across technology, business, and personal development.</p>
+            <div class="projects-header">
+                <h1 class="projects-title">My Projects</h1>
+                <p class="projects-subtitle">A collection of work that showcases my skills and passion for development</p>
+                <a href="index.html" class="btn btn-secondary back-btn">← Back to Home</a>
+            </div>
             
-            <div class="projects-timeline">
-                
-                <!-- Project 1: Resume Website (Most Recent - 2025) -->
-                <div class="timeline-item" data-year="2025">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('project-placeholder.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">October 2025</div>
-                                        <h3>Personal Resume Website</h3>
-                                        <p>A responsive portfolio website built with modern web technologies, featuring custom animations and a warm, professional design aesthetic. Developed as a showcase of web development skills and personal branding.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">HTML5</span>
-                                            <span class="tech-tag">CSS3</span>
-                                            <span class="tech-tag">JavaScript</span>
-                                            <span class="tech-tag">Responsive Design</span>
+            <div class="projects-list">
+                <!-- Endurance Training Projects -->
+                <div class="expandable-project-card">
+                    <!-- Mountain Background Section -->
+                    <div class="mountain-background-section">
+                        <div class="project-summary">
+                            <h3 class="project-title">Endurance Training & Athletics</h3>
+                            <p class="project-description">Comprehensive endurance training programs across multiple sports, demonstrating discipline, goal-setting, and systematic improvement through data-driven approaches.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Endurance Training</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Goal Achievement</span>
+                                <span class="tech-tag">Discipline</span>
+                            </div>
+                        </div>
+                        
+                        <details class="project-details">
+                            <summary class="details-toggle">
+                                <span>View Full Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </summary>
+                        </details>
+                    </div>
+                    
+                    <!-- Expanded Content Section -->
+                    <div class="details-content" id="endurance-details">
+                        <div class="detail-section">
+                            <h4>Endurance Philosophy</h4>
+                            <p>My approach to endurance training reflects the same systematic, goal-oriented mindset I bring to academic and professional challenges. Through consistent training across multiple disciplines, I've developed resilience, analytical thinking, and the ability to maintain performance under pressure - skills that translate directly to all areas of life.</p>
+                            
+                            <div class="project-hero-image">
+                                <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Baker/Baker Climb.JPG')">
+                                    <img src="images/Endurance Images/Mountaineering/Mt Baker/Baker Climb.JPG" alt="Mt Baker Climb - Endurance Philosophy">
+                                    <div class="gallery-caption">Mt Baker Climb</div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                            <div class="detail-section">
+                                <h4>Training Disciplines</h4>
+                                
+                                <!-- Mini Dropdown 1: Mountaineering -->
+                                <div class="mini-project-card">
+                                    <details class="mini-project-details">
+                                        <summary class="mini-details-toggle">
+                                            <div class="mini-project-header">
+                                                <h5>Mountaineering</h5>
+                                                <p>High-altitude summit achievements demonstrating technical climbing skills and mental fortitude</p>
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </summary>
+                                        
+                                        <div class="mini-details-content">
+                                            
+                                            <div class="mountaineering-achievements">
+                                                <div class="achievement-item">
+                                                    <h6><strong>Mt. Baker Summit (2022)</strong></h6>
+                                                    <p><em>2-day expedition</em></p>
+                                                    
+                                                    <div class="mountaineering-gallery">
+                                                        <div class="gallery-grid-three">
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Baker/Baker Summit.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Baker/Baker Summit.JPG" alt="Mt Baker Summit">
+                                                                <div class="gallery-caption">Mt Baker Summit</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Baker/Baker Picture 1.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Baker/Baker Picture 1.JPG" alt="Mt Baker Expedition">
+                                                                <div class="gallery-caption">Baker Expedition</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Baker/Baker Picture 2.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Baker/Baker Picture 2.JPG" alt="Mt Baker Adventure">
+                                                                <div class="gallery-caption">Baker Adventure</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <ul>
+                                                        <li>Successfully summited 10,781-foot glaciated peak</li>
+                                                        <li>Navigated crevasse fields and technical glacier travel</li>
+                                                        <li>Executed rope team techniques and self-arrest skills</li>
+                                                        <li>Managed alpine start timing and weather window assessment</li>
+                                                        <li>Demonstrated endurance through 12+ hour summit day</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="achievement-item">
+                                                    <h6><strong>Mt. Rainier Summit (2023)</strong></h6>
+                                                    <p><em>4-day expedition</em></p>
+                                                    
+                                                    <div class="mountaineering-gallery">
+                                                        <div class="gallery-grid-three">
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Rainer/Rainer 1.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Rainer/Rainer 1.JPG" alt="Mt Rainier Summit">
+                                                                <div class="gallery-caption">Rainier Summit</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Rainer/Rainer Camp 1.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Rainer/Rainer Camp 1.JPG" alt="Mt Rainier Camp">
+                                                                <div class="gallery-caption">Rainier Camp</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Rainer/Rainer Start.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Rainer/Rainer Start.JPG" alt="Mt Rainier Start">
+                                                                <div class="gallery-caption">Expedition Start</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Mountaineering/Mt Rainer/Rainer sitting.JPG')">
+                                                                <img src="images/Endurance Images/Mountaineering/Mt Rainer/Rainer sitting.JPG" alt="Mt Rainier Rest">
+                                                                <div class="gallery-caption">Team Rest</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <ul>
+                                                        <li>Conquered Washington's highest peak at 14,411 feet</li>
+                                                        <li>Multi-day expedition with overnight glacier camping</li>
+                                                        <li>Advanced technical climbing including steep ice and rock</li>
+                                                        <li>High-altitude acclimatization and physiology management</li>
+                                                        <li>Team leadership and decision-making in extreme conditions</li>
+                                                        <li>Weather assessment and risk management protocols</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mini-feature-highlight">
+                                                <strong>Technical Skills Developed:</strong> Glacier navigation, rope team systems, high-altitude performance, risk assessment, and expedition planning
+                                            </div>
                                         </div>
-                                        <div class="project-links">
-                                            <a href="index.html" class="project-btn">Live Demo</a>
-                                            <a href="https://github.com/LuMo6282/ResumeWebsite" class="project-btn" target="_blank">GitHub</a>
+                                    </details>
+                                </div>
+
+                                <!-- Mini Dropdown 2: Races -->
+                                <div class="mini-project-card">
+                                    <details class="mini-project-details">
+                                        <summary class="mini-details-toggle">
+                                            <div class="mini-project-header">
+                                                <h5>Competitive Racing</h5>
+                                                <p>Multi-sport and endurance racing achievements showcasing sustained performance</p>
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </summary>
+                                        
+                                        <div class="mini-details-content">
+                                            
+                                            <div class="race-achievements">
+                                                <div class="achievement-item">
+                                                    <h6><strong>Ironman 70.3</strong></h6>
+                                                    <p><em>Half-distance triathlon</em></p>
+                                                    
+                                                    <div class="racing-gallery">
+                                                        <div class="gallery-grid-three">
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Races/Ironman 70.3/Ironman 70.3.jpg')">
+                                                                <img src="images/Endurance Images/Races/Ironman 70.3/Ironman 70.3.jpg" alt="Ironman 70.3 Race">
+                                                                <div class="gallery-caption">Ironman 70.3 Race Day</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Races/Ironman 70.3/Ironman Finishline.JPG')">
+                                                                <img src="images/Endurance Images/Races/Ironman 70.3/Ironman Finishline.JPG" alt="Ironman Finish Line">
+                                                                <div class="gallery-caption">Ironman Finish Line</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/Races/Ironman 70.3/Ironman mom&dad.jpg')">
+                                                                <img src="images/Endurance Images/Races/Ironman 70.3/Ironman mom&dad.jpg" alt="Ironman with Family">
+                                                                <div class="gallery-caption">Post-Race Celebration</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <ul>
+                                                        <li>1.2-mile swim in open water conditions</li>
+                                                        <li>56-mile cycling leg with strategic pacing</li>
+                                                        <li>13.1-mile run to complete the half-distance challenge</li>
+                                                        <li>Comprehensive training across three disciplines</li>
+                                                        <li>Nutrition and hydration strategy execution</li>
+                                                        <li>Mental resilience through 4+ hours of sustained effort</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="achievement-item">
+                                                    <h6><strong>Boulderthon Half Marathon</strong></h6>
+                                                    <p><em>Half marathon race</em></p>
+                                                    <ul>
+                                                        <li>13.1-mile competitive running event</li>
+                                                        <li>Strategic pacing and race execution</li>
+                                                        <li>High-altitude performance in Boulder, Colorado</li>
+                                                        <li>Demonstrated consistent training and preparation</li>
+                                                        <li>Goal achievement through systematic progression</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mini-feature-highlight">
+                                                <strong>Race Skills:</strong> Strategic pacing, nutrition timing, mental toughness, and competitive performance under pressure
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <!-- Mini Dropdown 3: Adventure Pursuits -->
+                                <div class="mini-project-card">
+                                    <details class="mini-project-details">
+                                        <summary class="mini-details-toggle">
+                                            <div class="mini-project-header">
+                                                <h5>Adventure & Wilderness Pursuits</h5>
+                                                <p>Multi-day wilderness adventures demonstrating navigation and backcountry skills</p>
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </summary>
+                                        
+                                        <div class="mini-details-content">
+                                            
+                                            <div class="adventure-achievements">
+                                                <div class="achievement-item">
+                                                    <h6><strong>Enchantments Hike</strong></h6>
+                                                    <p><em>Alpine wilderness traverse</em></p>
+                                                    
+                                                    <div class="adventure-gallery">
+                                                        <div class="gallery-grid-three">
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments Colchuck.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments Colchuck.JPG" alt="Enchantments Colchuck Lake">
+                                                                <div class="gallery-caption">Colchuck Lake</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments standing.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments standing.JPG" alt="Enchantments Alpine Zone">
+                                                                <div class="gallery-caption">Alpine Zone</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments forest.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments forest.JPG" alt="Enchantments Forest">
+                                                                <div class="gallery-caption">Forest Trail</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments mountain.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments mountain.JPG" alt="Enchantments Mountain View">
+                                                                <div class="gallery-caption">Mountain Vista</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments Mtgoat.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments Mtgoat.JPG" alt="Enchantments Mountain Goat">
+                                                                <div class="gallery-caption">Mountain Goat</div>
+                                                            </div>
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Enchantments/Enchantments Group photo start.JPG')">
+                                                                <img src="images/Endurance Images/For Fun/Enchantments/Enchantments Group photo start.JPG" alt="Enchantments Group Start">
+                                                                <div class="gallery-caption">Group Start</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <ul>
+                                                        <li>19-mile traverse through Washington's premier alpine zone</li>
+                                                        <li>4,500+ feet elevation gain through rugged granite terrain</li>
+                                                        <li>Navigation through permit-only wilderness area</li>
+                                                        <li>Alpine lake chains and pristine backcountry exploration</li>
+                                                        <li>Leave No Trace principles and wilderness ethics</li>
+                                                        <li>Self-sufficiency in remote mountain environment</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="achievement-item">
+                                                    <h6><strong>Skyline Traverse</strong></h6>
+                                                    <p><em>High-route wilderness expedition</em></p>
+                                                    
+                                                    <div class="adventure-gallery">
+                                                        <div class="single-image-container">
+                                                            <div class="gallery-item" onclick="openLightbox('images/Endurance Images/For Fun/Skyline Traverse.jpg')">
+                                                                <img src="images/Endurance Images/For Fun/Skyline Traverse.jpg" alt="Skyline Traverse">
+                                                                <div class="gallery-caption">Skyline Traverse</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <ul>
+                                                        <li>Multi-day high-altitude ridge traverse</li>
+                                                        <li>Advanced route-finding and navigation skills</li>
+                                                        <li>Exposure to technical terrain and weather challenges</li>
+                                                        <li>Overnight wilderness camping and logistics</li>
+                                                        <li>Risk assessment in dynamic mountain conditions</li>
+                                                        <li>Team coordination and safety protocols</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mini-feature-highlight">
+                                                <strong>Wilderness Skills:</strong> Navigation, risk management, outdoor leadership, and environmental awareness in challenging conditions
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+
+                                <!-- Mini Dropdown 4: Performance Analytics -->
+                                <div class="mini-project-card">
+                                    <details class="mini-project-details">
+                                        <summary class="mini-details-toggle">
+                                            <div class="mini-project-header">
+                                                <h5>Training & Performance Analytics</h5>
+                                                <p>Data-driven approach to endurance training optimization and goal achievement</p>
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </summary>
+                                        
+                                        <div class="mini-details-content">
+                                            <div class="analytics-gallery">
+                                                <div class="single-image-container">
+                                                    <div class="gallery-item" onclick="openLightbox('images/endurance-tracking.jpg')">
+                                                        <img src="images/endurance-tracking.jpg" alt="Performance analytics dashboard">
+                                                        <div class="gallery-caption">Training Data & Analytics</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>Heart rate, pace, and power data aggregation across activities</li>
+                                                <li>Training load periodization and recovery monitoring</li>
+                                                <li>Performance trend analysis and plateau identification</li>
+                                                <li>Goal setting with systematic progression tracking</li>
+                                                <li>Altitude acclimatization and physiological adaptation</li>
+                                                <li>Injury prevention through load management protocols</li>
+                                                <li>Equipment optimization based on performance metrics</li>
+                                            </ul>
+                                            <div class="mini-feature-highlight">
+                                                <strong>Analytical Skills:</strong> Data interpretation, trend identification, performance correlation, and evidence-based training optimization
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Skills & Personal Development</h4>
+                                <div class="tech-details">
+                                    <div class="tech-category">
+                                        <strong>Discipline:</strong> Consistent daily training regardless of conditions or motivation
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Analysis:</strong> Performance data tracking, interpretation, and optimization strategies
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Goal Setting:</strong> Long-term planning with systematic progression and milestone achievement
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Resilience:</strong> Mental toughness and ability to perform under pressure and fatigue
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Connection to Professional Life</h4>
+                                <p>The discipline, analytical thinking, and goal-oriented approach developed through endurance training directly enhance my academic and professional capabilities. The ability to maintain focus during long study sessions, break complex problems into manageable components, and persist through challenges are all skills honed through endurance athletics. This training has taught me that excellence is indeed "not an act, but a habit" - a philosophy I apply to all endeavors.</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- L&L Autospa - Car Detailing Business -->
+                <div class="expandable-project-card">
+                    <div class="project-summary">
+                        <h3 class="project-title">L&L Autospa - Car Detailing Business</h3>
+                        <p class="project-description">Co-founded and operated a professional automobile detailing business. Generated 50+ recurring clients and $10k+ revenue over 2 summers through quality service and customer relationships.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Entrepreneurship</span>
+                            <span class="tech-tag">Business Operations</span>
+                            <span class="tech-tag">Customer Service</span>
+                        </div>
+                    </div>
+                    
+                    <details class="project-details">
+                        <summary class="details-toggle">
+                            <span>View Full Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </summary>
+                        
+                        <div class="details-content">
+                            <div class="detail-section">
+                                <h4>Business Overview</h4>
+                                <p><strong>L&L Autospa</strong> - "Clean Space, Clear Mind" - A comprehensive automobile detailing service co-founded during high school. Built from the ground up to provide professional-grade detailing services with a focus on quality, reliability, and customer satisfaction. Successfully operated on Mercer Island, serving the Greater Seattle area with mobile detailing services.</p>
+                                
+                                <div class="project-hero-image">
+                                    <img src="images/car-detailing-1.jpg" alt="L&L Autospa car detailing work" onclick="openLightbox('images/car-detailing-1.jpg')">
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Service Packages & Pricing</h4>
+                                <ul>
+                                    <li><strong>Standard Detail ($200-$225):</strong> Full interior/exterior clean, sap & bug removal, dog hair removal, window & screen clean, floor mat deep clean, carpet stain removal, exterior dressing & sealant</li>
+                                    <li><strong>Full Detail ($235-$260):</strong> Everything in Standard plus full body wax & buff, tire-shine, door trim blackening</li>
+                                    <li><strong>Premium Detail ($275-$300):</strong> Everything in Full Detail plus chrome polish, leather restorer, scratch treatment, windshield treatment, headlight treatment</li>
+                                    <li><strong>Express Detail Package:</strong> Quick service option for regular maintenance clients</li>
+                                </ul>
+                                
+                                <div class="feature-highlight">
+                                    <h5>Professional Service Menu</h5>
+                                    <p>Complete pricing guide available for download - showcasing our transparent pricing and comprehensive service offerings.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Business Operations</h4>
+                                <div class="tech-details">
+                                    <div class="tech-category">
+                                        <strong>Location:</strong> 2405 84th Ave SE, Mercer Island
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Service Area:</strong> Greater Seattle Area - Mobile Service
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Contact:</strong> Lucas (412-736-8821), Linnéa (206-747-9467)
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Business Email:</strong> MercerAutoSpaBusiness@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Quality Results Gallery</h4>
+                                <div class="project-gallery">
+                                    <div class="gallery-grid">
+                                        <div class="gallery-item" onclick="openLightbox('images/car-detailing-1.jpg')">
+                                            <img src="images/car-detailing-1.jpg" alt="Professional car detailing results">
+                                            <div class="gallery-caption">Professional Detailing Work</div>
+                                        </div>
+                                        <div class="gallery-item" onclick="openLightbox('images/ll-autospa-service-menu.jpg')">
+                                            <img src="images/ll-autospa-service-menu.jpg" alt="L&L Autospa service menu">
+                                            <div class="gallery-caption">Complete Service Menu</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Achievements & Results</h4>
+                                <ul>
+                                    <li>Successfully built and operated business as high school entrepreneurs</li>
+                                    <li>Generated <strong>$10,000+ in revenue</strong> over 2 summers</li>
+                                    <li>Developed <strong>50+ recurring clients</strong> through exceptional service quality</li>
+                                    <li>Created comprehensive service packages and competitive pricing structure</li>
+                                    <li>Managed all business aspects: operations, customer service, scheduling, and finances</li>
+                                    <li>Built strong reputation for reliability and attention to detail</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Skills & Experience Gained</h4>
+                                <p>This entrepreneurial venture provided invaluable hands-on experience in business management, customer relationship building, service quality control, pricing strategy, and problem-solving. The experience reinforced my commitment to excellence and attention to detail - values that carry into all my academic and professional work. As stated in our motto: "Clean Space, Clear Mind" - we believe in delivering quality that creates peace of mind for our clients.</p>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="mailto:MercerAutoSpaBusiness@gmail.com" class="project-link">Contact Business</a>
+                                <a href="images/ll-autospa-service-menu.jpg" class="project-link" download="L&L-Autospa-Service-Menu.jpg">Download Service Menu</a>
+                            </div>
                         </div>
-                    </div>
+                    </details>
                 </div>
 
-                <!-- Project 2: Auto Detailing Business (2024-Present) -->
-                <div class="timeline-item" data-year="2024">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('carpic1.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">2024 - Present</div>
-                                        <h3>Auto Detailing Business</h3>
-                                        <p>Founded and manage a successful automobile detailing business, handling client relationships, scheduling, and quality service delivery. Built from the ground up with focus on customer satisfaction and operational efficiency.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">Business Management</span>
-                                            <span class="tech-tag">Customer Service</span>
-                                            <span class="tech-tag">Operations</span>
-                                            <span class="tech-tag">Entrepreneurship</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="project-btn">Learn More</a>
-                                        </div>
+                <!-- CS Project -->
+                <div class="expandable-project-card">
+                    <div class="project-summary">
+                        <h3 class="project-title">Performance Lab Optimization</h3>
+                        <p class="project-description">C++ performance optimization project focusing on cache efficiency and parallel processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">OpenMP</span>
+                            <span class="tech-tag">Assembly</span>
+                        </div>
+                    </div>
+                    
+                    <details class="project-details">
+                        <summary class="details-toggle">
+                            <span>View Full Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </summary>
+                        
+                        <div class="details-content">
+                            <div class="detail-section">
+                                <h4>Project Overview</h4>
+                                <p>Advanced C++ performance optimization project focusing on cache-efficient algorithms and parallel processing techniques. Achieved significant speedup through strategic memory management and vectorization.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Optimizations</h4>
+                                <ul>
+                                    <li>Matrix multiplication optimization using cache blocking</li>
+                                    <li>Parallel processing implementation with OpenMP</li>
+                                    <li>SIMD vectorization for enhanced performance</li>
+                                    <li>Memory access pattern optimization</li>
+                                    <li>Performance benchmarking and analysis</li>
+                                </ul>
+                                
+                                <div class="feature-highlight">
+                                    <h5>Performance Achievement</h5>
+                                    <p>Achieved 15x speedup over naive implementation through systematic optimization techniques and parallel processing strategies.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Technical Implementation</h4>
+                                <div class="tech-details">
+                                    <div class="tech-category">
+                                        <strong>Languages:</strong> C++, Assembly
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Parallelization:</strong> OpenMP, SIMD
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Tools:</strong> GCC, Makefile, Linux
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="detail-section">
+                                <h4>Performance Results</h4>
+                                <p>Achieved 15x speedup over naive implementation through optimized algorithms and parallel processing techniques. Demonstrated deep understanding of computer architecture and performance optimization.</p>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link">GitHub Repository</a>
+                                <a href="#" class="project-link">Performance Report</a>
+                            </div>
                         </div>
-                    </div>
+                    </details>
                 </div>
 
-                <!-- Project 3: Fraternity Leadership (2024) -->
-                <div class="timeline-item" data-year="2024">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('leadership-placeholder.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">2024</div>
-                                        <h3>Fraternity New Member Education</h3>
-                                        <p>Designed and implemented comprehensive educational programs for new fraternity members, focusing on leadership development and community building. Responsible for mentoring and guiding new members through their integration process.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">Leadership</span>
-                                            <span class="tech-tag">Program Design</span>
-                                            <span class="tech-tag">Mentorship</span>
-                                            <span class="tech-tag">Community Building</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="project-btn">Learn More</a>
-                                        </div>
+                <!-- Portfolio Project -->
+                <div class="expandable-project-card">
+                    <div class="project-summary">
+                        <h3 class="project-title">Personal Resume Website</h3>
+                        <p class="project-description">Responsive personal website showcasing my experience, projects, and professional journey.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                    
+                    <details class="project-details">
+                        <summary class="details-toggle">
+                            <span>View Full Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </summary>
+                        
+                        <div class="details-content">
+                            <div class="detail-section">
+                                <h4>Project Overview</h4>
+                                <p>Designed and developed a responsive personal website to showcase my professional experience, technical skills, and projects. Focus on clean design and user experience.</p>
+                                
+                                <div class="project-hero-image">
+                                    <img src="images/profile-picture.jpg" alt="Portfolio website screenshot" onclick="openLightbox('images/profile-picture.jpg')">
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Responsive design optimized for all devices</li>
+                                    <li>Interactive project portfolio section</li>
+                                    <li>Professional experience timeline</li>
+                                    <li>Contact form with email integration</li>
+                                    <li>SEO optimization and fast loading times</li>
+                                </ul>
+                                
+                                <div class="feature-highlight">
+                                    <h5>Design Philosophy</h5>
+                                    <p>Clean, minimalist design that effectively communicates professional experience while maintaining excellent user experience across all devices.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Technical Implementation</h4>
+                                <div class="tech-details">
+                                    <div class="tech-category">
+                                        <strong>Frontend:</strong> HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Design:</strong> Responsive Grid, Mobile-First
+                                    </div>
+                                    <div class="tech-category">
+                                        <strong>Deployment:</strong> Git, GitHub Pages
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: CS Course Projects (2023-Present) -->
-                <div class="timeline-item" data-year="2023">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('coding-placeholder.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">2023 - Present</div>
-                                        <h3>CS Course Projects</h3>
-                                        <p>A collection of programming assignments and projects from my Computer Science coursework at CU Boulder, demonstrating algorithmic thinking and problem-solving skills across various programming languages and paradigms.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">Python</span>
-                                            <span class="tech-tag">Java</span>
-                                            <span class="tech-tag">Data Structures</span>
-                                            <span class="tech-tag">Algorithms</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="https://github.com/LuMo6282" class="project-btn" target="_blank">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            
+                            <div class="detail-section">
+                                <h4>Design Philosophy</h4>
+                                <p>Professional online presence that effectively communicates my skills and experience to potential employers and collaborators through clean, accessible design.</p>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="index.html" class="project-link">View Live Site</a>
+                                <a href="#" class="project-link">GitHub Repository</a>
                             </div>
                         </div>
-                    </div>
+                    </details>
                 </div>
-
-                <!-- Project 5: Fitness Journey (2022-Present) -->
-                <div class="timeline-item" data-year="2022">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('fitness-placeholder.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">2022 - Present</div>
-                                        <h3>Personal Fitness & Endurance Training</h3>
-                                        <p>Developed and maintain a structured training regimen focused on endurance and overall fitness, applying disciplined goal-setting and progress tracking. A commitment to personal growth and physical wellness that complements academic pursuits.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">Goal Setting</span>
-                                            <span class="tech-tag">Discipline</span>
-                                            <span class="tech-tag">Progress Tracking</span>
-                                            <span class="tech-tag">Health & Wellness</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="project-btn">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Projects -->
-                <div class="timeline-item coming-soon" data-year="Future">
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="project-background" style="background-image: url('future-placeholder.jpg');">
-                                <div class="project-overlay">
-                                    <div class="project-info">
-                                        <div class="project-date">Coming Soon</div>
-                                        <h3>Next Big Project</h3>
-                                        <p>Always working on something new! Currently exploring full-stack development and machine learning applications. Stay tuned for updates on upcoming projects and innovations.</p>
-                                        <div class="project-tech">
-                                            <span class="tech-tag">React</span>
-                                            <span class="tech-tag">Node.js</span>
-                                            <span class="tech-tag">Machine Learning</span>
-                                            <span class="tech-tag">Innovation</span>
-                                        </div>
-                                        <div class="project-links">
-                                            <a href="#" class="project-btn disabled">Coming Soon</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Lucas Moraca. Built with passion and purpose.</p>
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/lucas-moraca-301264275/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/LuMo6282" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/lucasmoraca_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:lucasmoraca12@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
+    <!-- Lightbox for Image Viewing -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Project Image">
         </div>
-    </footer>
+    </div>
+
+    <script>
+        // Endurance card toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const enduranceDetails = document.querySelector('.expandable-project-card:first-child .project-details');
+            const enduranceContent = document.getElementById('endurance-details');
+            
+            if (enduranceDetails && enduranceContent) {
+                enduranceDetails.addEventListener('toggle', function() {
+                    if (this.open) {
+                        enduranceContent.style.display = 'block';
+                    } else {
+                        enduranceContent.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = imageSrc;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Prevent lightbox from closing when clicking on the image
+        document.getElementById('lightbox-img').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+
 </body>
 </html>
