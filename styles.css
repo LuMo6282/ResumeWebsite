@@ -1252,6 +1252,8 @@ a, button, .skill-item, .timeline-content, .education-item {
 /* Special background for endurance training card */
 .expandable-project-card:first-child {
     color: white;
+    border: none;
+    background: rgba(20, 20, 30, 0.85);
 }
 
 /* Mountain background only on the summary + button section */
@@ -1262,6 +1264,7 @@ a, button, .skill-item, .timeline-content, .education-item {
     background-position: center;
     background-attachment: local;
     border-radius: 20px 20px 0 0;
+    margin-bottom: 0;
 }
 
 .expandable-project-card:first-child .project-summary {
@@ -1294,19 +1297,24 @@ a, button, .skill-item, .timeline-content, .education-item {
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     border: none;
+    margin-bottom: -1px;
 }
 
 .expandable-project-card:first-child .details-toggle:hover {
     background: rgba(0, 0, 0, 0.2);
+    margin-bottom: -1px;
 }
 
 /* Separate expanded content section */
 .expandable-project-card:first-child .details-content {
-    background: rgba(255, 255, 255, 0.95);
-    color: #3C3C3C;
+    background: rgba(20, 20, 30, 0.85);
+    color: #e0e0e0;
     border-radius: 0 0 20px 20px;
-    margin-top: 0;
+    margin-top: -5px;
     display: none;
+    backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 1;
 }
 
 .expandable-project-card:first-child .project-details[open] + .details-content {
@@ -1314,18 +1322,104 @@ a, button, .skill-item, .timeline-content, .education-item {
 }
 
 .expandable-project-card:first-child .details-content h4 {
-    color: #3C3C3C;
+    color: #ffffff;
 }
 
 .expandable-project-card:first-child .details-content p,
 .expandable-project-card:first-child .details-content li {
-    color: #3C3C3C;
+    color: #e0e0e0;
     text-shadow: none;
 }
 
 .expandable-project-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(60, 60, 60, 0.15);
+}
+
+/* Keep hover transform for endurance section but ensure seamless connection */
+.expandable-project-card:first-child:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Car detailing business card background */
+.expandable-project-card:nth-child(2) {
+    color: white;
+    border: none;
+    background: rgba(20, 20, 30, 0.85);
+}
+
+/* Car detailing background only on the summary + button section */
+.expandable-project-card:nth-child(2) .car-detailing-background-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+                      url('images/Car Detailing Images/unnamed.jpg');
+    background-size: cover;
+    background-position: center 25%;
+    background-attachment: local;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0;
+}
+
+.expandable-project-card:nth-child(2) .project-summary {
+    background: transparent;
+}
+
+/* Make the details toggle also transparent */
+.expandable-project-card:nth-child(2) .project-details {
+    border-top: none;
+}
+
+.expandable-project-card:nth-child(2) .project-title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.expandable-project-card:nth-child(2) .project-description {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.expandable-project-card:nth-child(2) .tech-tag {
+    background: rgba(255, 140, 66, 0.8);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.expandable-project-card:nth-child(2) .details-toggle {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border: none;
+}
+
+.expandable-project-card:nth-child(2) .details-toggle:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Car detailing expanded content section */
+.expandable-project-card:nth-child(2) .details-content {
+    background: rgba(20, 20, 30, 0.85);
+    color: #e0e0e0;
+    border-radius: 0 0 20px 20px;
+    margin-top: -5px;
+    display: none;
+    backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 1;
+}
+
+.expandable-project-card:nth-child(2) .project-details[open] + .details-content {
+    display: block;
+}
+
+.expandable-project-card:nth-child(2) .details-content h4 {
+    color: #ffffff;
+}
+
+.expandable-project-card:nth-child(2) .details-content p,
+.expandable-project-card:nth-child(2) .details-content li {
+    color: #e0e0e0;
+    text-shadow: none;
 }
 
 .project-summary {
@@ -1634,6 +1728,54 @@ a, button, .skill-item, .timeline-content, .education-item {
     color: #FF8C42;
 }
 
+/* Dark theme for endurance section mini-project cards */
+.expandable-project-card:first-child .mini-project-card {
+    background: rgba(25, 30, 40, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+.expandable-project-card:first-child .mini-project-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: rgba(30, 35, 45, 0.8);
+}
+
+.expandable-project-card:first-child .mini-details-toggle {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.expandable-project-card:first-child .mini-details-toggle:hover {
+    background: rgba(255, 140, 66, 0.2);
+}
+
+.expandable-project-card:first-child .mini-project-header h5 {
+    color: #ffffff;
+}
+
+.expandable-project-card:first-child .mini-project-header p {
+    color: #cccccc;
+}
+
+.expandable-project-card:first-child .mini-details-content {
+    background: rgba(15, 20, 30, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.expandable-project-card:first-child .mini-details-content ul li {
+    color: #e0e0e0;
+}
+
+.expandable-project-card:first-child .mini-feature-highlight {
+    background: rgba(255, 140, 66, 0.2);
+    border-left: 3px solid #FF8C42;
+}
+
+.expandable-project-card:first-child .mini-feature-highlight strong {
+    color: #FF8C42;
+}
+
 /* Achievement Items Styling */
 .mountaineering-achievements,
 .race-achievements,
@@ -1669,6 +1811,38 @@ a, button, .skill-item, .timeline-content, .education-item {
 
 .achievement-item ul {
     margin-top: 0.5rem;
+}
+
+/* Dark theme for endurance section achievement items */
+.expandable-project-card:first-child .achievement-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.expandable-project-card:first-child .achievement-item h6 {
+    color: #ffffff;
+}
+
+.expandable-project-card:first-child .achievement-item p {
+    color: #cccccc;
+}
+
+/* Coming Soon Notice Styling */
+.coming-soon-notice {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.coming-soon-notice p {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Coming Soon Notice for Endurance Section */
+.expandable-project-card:first-child .coming-soon-notice p {
+    color: #bbb;
 }
 
 /* Enhanced Gallery Layouts for Endurance Section */
@@ -1731,6 +1905,34 @@ a, button, .skill-item, .timeline-content, .education-item {
     width: 100%;
 }
 
+/* Skyline Traverse side-by-side layout */
+.skyline-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.skyline-text {
+    flex: 1;
+}
+
+.skyline-image {
+    flex: 0 0 300px;
+}
+
+.skyline-image .gallery-item {
+    width: 100%;
+}
+
+.skyline-image .gallery-item img {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    vertical-align: top;
+    object-position: center 70%;
+    border-radius: 8px;
+}
+
 /* Responsive adjustments for endurance galleries */
 @media (max-width: 768px) {
     .gallery-grid-two,
@@ -1743,6 +1945,17 @@ a, button, .skill-item, .timeline-content, .education-item {
     .gallery-grid-three,
     .gallery-grid-four {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Stack Skyline content vertically on mobile */
+    .skyline-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .skyline-image {
+        flex: none;
+        align-self: center;
     }
 }
 
