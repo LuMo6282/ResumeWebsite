@@ -371,25 +371,67 @@
                     <div class="details-content" id="car-detailing-details">
                             <div class="detail-section">
                                 <h4>Business Overview</h4>
-                                <p><strong>L&L Autospa</strong> - "Clean Space, Clear Mind" - A comprehensive automobile detailing service co-founded during high school. Built from the ground up to provide professional-grade detailing services with a focus on quality, reliability, and customer satisfaction. Successfully operated on Mercer Island, serving the Greater Seattle area with mobile detailing services.</p>
-                                
-                                <div class="project-hero-image">
-                                    <img src="images/car-detailing-1.jpg" alt="L&L Autospa car detailing work" onclick="openLightbox('images/car-detailing-1.jpg')">
+                                <div class="business-overview-content">
+                                    <div class="business-text">
+                                        <p><strong>L&L Autospa</strong> - Having just graduated from highschool, I found myself looking for more unique opportunities that would challenge me more than 
+                                        the lifeguarding or swim-instructing jobs I had already worked. This lead to me co-founding a car detailing business.</p>
+                                        
+                                        <br><p>We had initially started with zero experience, and built the brand from the ground up learning techniques on youtube, figuring out marketing
+                                        strategies and costumer service ideals through trial and error, and even experimenting with graphic design and video editing to promote our new brand.
+                                        Through the first summer, we brought in roughly $3,000 in revenue. By the next, we had brought in well over $7,000. We learned to keep improving our profit margin 
+                                        not by sheer scaling, but through efficency. Through detailing multiple vehicles at once and bringing on trainee's, we managed to increase our hourly output significantly. 
+                                        This business has now become another keystone of my life, bringing out my passion for entrepreneurship and building my ideas into reality. </p>
+                                    </div>
+                                    <div class="business-menu">
+                                        <div class="gallery-item large-gallery-item menu-item" onclick="openLightbox('images/Car Detailing Images/ll-autospa-service-menu.jpg')">
+                                            <img src="images/Car Detailing Images/ll-autospa-service-menu.jpg" alt="L&L Autospa service menu">
+                                            <div class="gallery-caption">Complete Service Menu</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
                             <div class="detail-section">
-                                <h4>Service Packages & Pricing</h4>
-                                <ul>
-                                    <li><strong>Standard Detail ($200-$225):</strong> Full interior/exterior clean, sap & bug removal, dog hair removal, window & screen clean, floor mat deep clean, carpet stain removal, exterior dressing & sealant</li>
-                                    <li><strong>Full Detail ($235-$260):</strong> Everything in Standard plus full body wax & buff, tire-shine, door trim blackening</li>
-                                    <li><strong>Premium Detail ($275-$300):</strong> Everything in Full Detail plus chrome polish, leather restorer, scratch treatment, windshield treatment, headlight treatment</li>
-                                    <li><strong>Express Detail Package:</strong> Quick service option for regular maintenance clients</li>
-                                </ul>
-                                
-                                <div class="feature-highlight">
-                                    <h5>Professional Service Menu</h5>
-                                    <p>Complete pricing guide available for download - showcasing our transparent pricing and comprehensive service offerings.</p>
+                                <h4>Detailing Process Gallery</h4>
+                                <div class="video-gallery">
+                                    <div class="video-grid">
+                                        <div class="video-item">
+                                            <video controls preload="metadata">
+                                                <source src="images/Car Detailing Images/Before clip-1.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-caption">Before Detailing</div>
+                                            <div class="play-button">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </div>
+                                        <div class="video-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls preload="metadata">
+                                                <source src="images/Car Detailing Images/Detailing clip-1.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-caption">Detailing Process</div>
+                                            <div class="play-button">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </div>
+                                        <div class="video-arrow">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="video-item">
+                                            <video controls preload="metadata">
+                                                <source src="images/Car Detailing Images/After clip-1.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-caption">After Detailing</div>
+                                            <div class="play-button">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -414,14 +456,10 @@
                             <div class="detail-section">
                                 <h4>Quality Results Gallery</h4>
                                 <div class="project-gallery">
-                                    <div class="gallery-grid">
-                                        <div class="gallery-item" onclick="openLightbox('images/car-detailing-1.jpg')">
-                                            <img src="images/car-detailing-1.jpg" alt="Professional car detailing results">
-                                            <div class="gallery-caption">Professional Detailing Work</div>
-                                        </div>
-                                        <div class="gallery-item" onclick="openLightbox('images/ll-autospa-service-menu.jpg')">
-                                            <img src="images/ll-autospa-service-menu.jpg" alt="L&L Autospa service menu">
-                                            <div class="gallery-caption">Complete Service Menu</div>
+                                    <div class="single-image-container">
+                                        <div class="gallery-item large-gallery-item car-sign-item" onclick="openLightbox('images/Car Detailing Images/Car sign (1).jpg')">
+                                            <img src="images/Car Detailing Images/Car sign (1).jpg" alt="L&L Autospa car sign">
+                                            <div class="gallery-caption">L&L Autospa Sign</div>
                                         </div>
                                     </div>
                                 </div>
@@ -632,13 +670,69 @@
                     }
                 });
             }
+
+            // Video play button functionality
+            const videoItems = document.querySelectorAll('.video-item');
+            videoItems.forEach(item => {
+                const video = item.querySelector('video');
+                const playButton = item.querySelector('.play-button');
+                
+                if (playButton && video) {
+                    playButton.addEventListener('click', function() {
+                        video.play();
+                        item.classList.add('playing');
+                    });
+                    
+                    video.addEventListener('pause', function() {
+                        item.classList.remove('playing');
+                    });
+                    
+                    video.addEventListener('ended', function() {
+                        item.classList.remove('playing');
+                    });
+                }
+            });
         });
 
         // Lightbox functionality
-        function openLightbox(imageSrc) {
-            document.getElementById('lightbox').style.display = 'block';
-            document.getElementById('lightbox-img').src = imageSrc;
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        function openLightbox(mediaSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxVideo = document.getElementById('lightbox-video');
+            
+            lightbox.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Check if it's a video or image
+            if (mediaSrc.includes('.mp4') || mediaSrc.includes('.webm') || mediaSrc.includes('.mov')) {
+                // It's a video
+                lightboxImg.style.display = 'none';
+                if (!lightboxVideo) {
+                    // Create video element if it doesn't exist
+                    const video = document.createElement('video');
+                    video.id = 'lightbox-video';
+                    video.controls = true;
+                    video.autoplay = true;
+                    video.muted = true;
+                    video.loop = true;
+                    video.style.maxWidth = '90%';
+                    video.style.maxHeight = '90%';
+                    video.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                    });
+                    lightbox.querySelector('.lightbox-content').appendChild(video);
+                }
+                const video = document.getElementById('lightbox-video');
+                video.src = mediaSrc;
+                video.style.display = 'block';
+            } else {
+                // It's an image
+                if (document.getElementById('lightbox-video')) {
+                    document.getElementById('lightbox-video').style.display = 'none';
+                }
+                lightboxImg.src = mediaSrc;
+                lightboxImg.style.display = 'block';
+            }
         }
 
         function closeLightbox() {
